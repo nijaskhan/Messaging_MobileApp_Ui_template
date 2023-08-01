@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:list_app/screen_logout.dart';
+import 'package:list_app/screen_person.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({super.key});
@@ -37,7 +39,13 @@ class ScreenHome extends StatelessWidget {
               radius: 30,
               backgroundImage: NetworkImage('https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png'),
             ),
-            title: Text("nijas"),
+            title: Text("nijas ${index+1}"),
+            onTap: (){
+              print("nijas ${index+1} clicked");
+              Navigator.of(context).push(MaterialPageRoute(builder: (ctx){
+                return ScreenPerson(name: "nijas ${index+1}");
+              }));
+            },
             subtitle: Text("one message has arrived"),
             trailing: Column(
               children: [
