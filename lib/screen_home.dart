@@ -8,7 +8,7 @@ class ScreenHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("List view sample project"),
+        title: Text("ListView test project"),
         shadowColor: Colors.blueGrey,
         leading: Padding(
           padding: const EdgeInsets.only(left: 14, right: 5),
@@ -16,6 +16,18 @@ class ScreenHome extends StatelessWidget {
               'https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2015%2F04%2Fwhatsapp-logo-1.'
               'png&f=1&nofb=1&ipt=87090c317ac540403ce76166a556207a92a747f6380efa6e5ffd63455ad45f00&ipo=images'),
         ),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: 16.0), // Adjust the padding value as needed
+            child: IconButton(
+                icon: Icon(Icons.login_outlined),
+              onPressed: (){
+                  print("logout button clicked !");
+                  Navigator.of(context).pushNamed('screen_2');
+              },
+            ),
+          ),
+        ],
       ),
       body: SafeArea(
           child: ListView.separated(
