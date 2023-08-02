@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:list_app/screen_home.dart';
 import 'package:list_app/screen_logout.dart';
+import 'package:list_app/screen_splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.green.shade200
       ),
-      home: ScreenHome(),
+      home: ScreenSplash(),
       routes: {
         'screen_1':(ctx) {
           return ScreenHome();
