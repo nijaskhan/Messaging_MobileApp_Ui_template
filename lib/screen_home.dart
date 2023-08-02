@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:list_app/screen_logout.dart';
 import 'package:list_app/screen_person.dart';
 
 class ScreenHome extends StatelessWidget {
