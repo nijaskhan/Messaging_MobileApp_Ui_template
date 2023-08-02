@@ -1,6 +1,6 @@
-# list_app
+# Messagin Mobile-App Template
 
-A new Flutter project.
+A Flutter Ui-test Project.
 
 ## Getting Started
 
