@@ -1,4 +1,4 @@
-# Messagin Mobile-App Template
+# Messaging Mobile-App Template
 
 A Flutter Ui-test Project.
 
